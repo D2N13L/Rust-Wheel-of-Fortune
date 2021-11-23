@@ -3,6 +3,7 @@ package wheeloffortune;
 import java.util.Random;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.io.IOException;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -16,7 +17,7 @@ import javax.swing.JTextField;
  */
 public class WheelOfFortune {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Random rnd = new Random();
         final JFrame frame = new JFrame();
@@ -31,11 +32,12 @@ public class WheelOfFortune {
         final JLabel label = new JLabel("Write your bets below the numbers \n and the amount of rolls you'd like to simulate below ↓");
         label.setFont(new Font("Arial", 1, 15));
         pane.add(label);
-        pane.add(new JLabel(new ImageIcon("src/wheeloffortune/1img.png")));
-        pane.add(new JLabel(new ImageIcon("src/wheeloffortune/3img.png")));
-        pane.add(new JLabel(new ImageIcon("src/wheeloffortune/5img.png")));
-        pane.add(new JLabel(new ImageIcon("src/wheeloffortune/10img.png")));
-        pane.add(new JLabel(new ImageIcon("src/wheeloffortune/20img.png")));
+        pane.add(new JLabel(new ImageIcon(WheelOfFortune.class.getResource("1img.png"))));
+        pane.add(new JLabel(new ImageIcon(WheelOfFortune.class.getResource("3img.png"))));
+        pane.add(new JLabel(new ImageIcon(WheelOfFortune.class.getResource("5img.png"))));
+        pane.add(new JLabel(new ImageIcon(WheelOfFortune.class.getResource("10img.png"))));
+        pane.add(new JLabel(new ImageIcon(WheelOfFortune.class.getResource("20img.png"))));
+
         pane.add(rolls);
         pane.add(one);
         pane.add(three);
