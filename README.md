@@ -11,4 +11,4 @@ Welcome to my Rust Wheel of Fortune sim!
 
 # How to install
  
- Go to Releases and simply use the .exe file that was built from the code provided
+ Go to Releases and simply use the .jar file that was built from the code provided
