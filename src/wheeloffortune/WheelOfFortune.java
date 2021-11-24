@@ -81,8 +81,9 @@ public class WheelOfFortune {
                     case 11:
                     case 12:
                         if (!one.getText().isEmpty()) {
-                            winnings += ((Integer.parseInt(one.getText()) * 2) - totalwager);
+                            winnings += ((Integer.parseInt(one.getText()) * 2));
                         }
+                        winnings -= totalwager;
                         amount1++;
                         break;
                     case 13:
@@ -92,8 +93,9 @@ public class WheelOfFortune {
                     case 17:
                     case 18:
                         if (!three.getText().isEmpty()) {
-                            winnings += ((Integer.parseInt(three.getText()) * 4) - totalwager);
+                            winnings += ((Integer.parseInt(three.getText()) * 4));
                         }
+                        winnings -= totalwager;
                         amount3++;
                         break;
 
@@ -102,21 +104,24 @@ public class WheelOfFortune {
                     case 21:
                     case 22:
                         if (!five.getText().isEmpty()) {
-                            winnings += ((Integer.parseInt(five.getText()) * 6) - totalwager);
+                            winnings += ((Integer.parseInt(five.getText()) * 6));
                         }
+                        winnings -= totalwager;
                         amount5++;
                         break;
                     case 23:
                     case 24:
                         if (!ten.getText().isEmpty()) {
-                            winnings += ((Integer.parseInt(ten.getText()) * 11) - totalwager);
+                            winnings += ((Integer.parseInt(ten.getText()) * 11));
                         }
+                        winnings -= totalwager;
                         amount10++;
                         break;
                     case 25:
                         if (!twenty.getText().isEmpty()) {
-                            winnings += ((Integer.parseInt(twenty.getText()) * 21) - totalwager);
+                            winnings += ((Integer.parseInt(twenty.getText()) * 21));
                         }
+                        winnings -= totalwager;
                         amount20++;
                         break;
                 }
